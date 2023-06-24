@@ -5,7 +5,7 @@ class MyHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
-        self.wfile.write(b'''docker hello world''')
+        self.wfile.write(b'''docker hello world v1''')
 
 def run():
     print('Starting server...')
