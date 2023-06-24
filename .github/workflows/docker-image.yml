@@ -25,3 +25,6 @@ jobs:
           context: .
           push: true
           tags: kushalka/webapp:1.2
+      - uses: isbang/compose-action@v1.4.1
+        with:
+          compose-file: "./docker/docker-compose.yml"
